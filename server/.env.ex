@@ -1,0 +1,1 @@
+DATABASE_URL="postgresql://postgres:docker@localhost:5439/gatherly?schema=public"
