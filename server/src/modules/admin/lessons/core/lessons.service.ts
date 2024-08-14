@@ -23,7 +23,13 @@ export class LessonsService {
     slug: string,
     eventSlug: string,
     userId: string,
-    { contentUrl, description, name, instructorId }: CreateLessonDto,
+    {
+      contentUrl,
+      description,
+      name,
+      instructorId,
+      availableAt,
+    }: CreateLessonDto,
   ) {
     const { membership } = await this.permissions.getUserMembership(
       slug,
@@ -48,6 +54,7 @@ export class LessonsService {
         name,
         eventId: event.id,
         instructorId,
+        availableAt,
       },
     });
 

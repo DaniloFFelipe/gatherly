@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "lessons" ADD COLUMN     "available_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP;

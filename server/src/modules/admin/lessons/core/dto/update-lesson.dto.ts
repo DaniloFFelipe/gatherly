@@ -9,6 +9,7 @@ export const updateLessonDtoSchema = extendApi(
     description: z.string().optional(),
     contentUrl: z.string().url().optional(),
     instructorId: z.string().uuid().optional(),
+    availableAt: z.coerce.date().optional(),
   }),
 );
 

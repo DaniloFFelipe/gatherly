@@ -58,7 +58,7 @@ export async function main() {
   const lesson: CreateLessonDto[] = Array.from({ length: 4 }).map((_, idx) => {
     return {
       contentUrl:
-        'http://192.168.15.4:4020/assets/d596e6a0-e01e-4e40-9a5b-b70e94853c90/stream',
+        'http://localhost:4020/assets/a83d27fe-c772-4a7c-b5d1-3484fea6eba7/stream',
       description: faker.lorem.paragraph(),
       name: 'Aula ' + (idx + 1),
       instructorId,
